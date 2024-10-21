@@ -1,0 +1,111 @@
+@import "Ginkgo";
+
+$mainColor: #15568e;
+
+* {
+  &, &:after, &:before {
+    vertical-align: middle;
+    @include box-sizing(border-box);
+    @include font-smoothing(subpixel-antialiased);
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: black;
+
+  font-size: medium;
+  text-align: center;
+
+  font-family:"Roboto", "Noto Sans TC", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  
+  // 文字染色，背景色、文字色
+  @include selection(rgba(120, 186, 255, 1.00), rgba(255, 255, 255, 1));
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  &:after,
+  &:before {
+    color: black;
+    vertical-align: middle !important;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button, select{
+  outline: none !important;
+  box-shadow: none !important;
+  border-width: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+
+.mobile-open {
+  display: none !important;
+  @include range-width(0, 770px) {
+    display: inline-block !important;
+  }
+}
+
+.mobile-close {
+  @include range-width(0, 770px) {
+    display: none !important;
+  }
+}
+
+.topnav {
+  background-color: $mainColor !important;
+  margin-top: 70px !important;
+}
+
+.topnav .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.topnav .navbar-nav .nav-item .nav-link.active {
+  color: #2dc2ff !important;
+}
+
+footer {
+  height: auto !important;
+}
+
+@media (max-width: 380px) {
+  .navbar-brand-box {
+    display: inline-block !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
