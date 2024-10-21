@@ -76,6 +76,21 @@ p {
 .topnav {
   background-color: $mainColor !important;
   margin-top: 70px !important;
+  top: 0;
+}
+
+
+.topnav .navbar-collapse {
+  
+  @include range-width(0, 992.98px) {
+    display: flex !important;
+  }
+}
+
+.topnav .navbar-nav {
+  @include range-width(0, 992.98px) {
+    flex-direction: row;
+  }
 }
 
 .topnav .navbar-nav .nav-link {

@@ -21,7 +21,11 @@ p { margin-bottom: 0; }
 
 @media screen and (max-width: 769px) and (min-width: 0) { .mobile-close { display: none !important; } }
 
-.topnav { background-color: #15568e !important; margin-top: 70px !important; }
+.topnav { background-color: #15568e !important; margin-top: 70px !important; top: 0; }
+
+@media screen and (max-width: 991.98px) and (min-width: 0) { .topnav .navbar-collapse { display: flex !important; } }
+
+@media screen and (max-width: 991.98px) and (min-width: 0) { .topnav .navbar-nav { flex-direction: row; } }
 
 .topnav .navbar-nav .nav-link { color: white !important; }
 
