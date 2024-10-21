@@ -1,5 +1,4 @@
 @import "Ginkgo";
-@import "bootstrap/bootstrap";
 
 $mainColor: #15568e;
 
@@ -60,12 +59,8 @@ p {
   margin-bottom: 0;
 }
 
-img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+.bg-main {
+  background-color: $mainColor;
 }
 
 .mobile-open {
@@ -81,88 +76,51 @@ img {
   }
 }
 
-.mainBoxs {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
+.topnav {
+  background-color: $mainColor !important;
+  margin-top: 70px !important;
+  top: 0;
+}
 
-  @include media-breakpoint-down(lg) {
-    width: 98%;
-  }
 
-  @include media-breakpoint-between(xl, xxl) {
-    width: 90%;
+.topnav .navbar-collapse {
+  
+  @include range-width(0, 992.98px) {
+    display: flex !important;
   }
 }
 
-header {
-  display: inline-block;
-  width: 100%;
-  padding: 20px;
-
-  @include media-breakpoint-down(md) {
-    padding: 15px 10px;
+.topnav .navbar-nav {
+  @include range-width(0, 992.98px) {
+    flex-direction: row;
   }
+}
+
+.topnav .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.topnav .navbar-nav .nav-item .nav-link.active {
+  color: #2dc2ff !important;
 }
 
 footer {
-  display: inline-block;
-  width: 100%;
-  padding: 20px;
-
-  @include media-breakpoint-down(md) {
-    padding: 15px 10px;
-  }
+  height: auto !important;
 }
 
-.mainBoxs {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
-
-  @include media-breakpoint-down(lg) {
-    width: 98%;
-  }
-
-  @include media-breakpoint-between(xl, xxl) {
-    width: 90%;
+@media (max-width: 380px) {
+  .navbar-brand-box {
+    display: inline-block !important;
   }
 }
 
 
-.img-logo {
-  display: inline-block;
-  width: 100%;
-  max-width: 120px;
-}
-
-.footerimg {
-  display: inline-block;
-  width: 100%;
-  max-width: 150px;
-}
 
 
 
 
-// text+color+bg
-.bg-main {
-  background-color: $mainColor;
-}
 
 
-
-// link
-
-
-
-
-// boo
-
-
-
-
-// map
 
 
 

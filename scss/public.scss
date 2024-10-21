@@ -1,6 +1,8 @@
 @import "Ginkgo";
+@import "bootstrap/bootstrap";
 
 $mainColor: #15568e;
+$lightGray: #74788d;
 
 * {
   &, &:after, &:before {
@@ -22,7 +24,7 @@ body {
 
   margin: 0;
   padding: 0;
-  color: black;
+  color: #313533;
 
   font-size: medium;
   text-align: center;
@@ -59,6 +61,20 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+input {
+  &::placeholder {
+    font-size: 0.9375rem !important;
+    color: $gray-500 !important;
+  }
+}
 
 .mobile-open {
   display: none !important;
@@ -73,51 +89,86 @@ p {
   }
 }
 
-.topnav {
-  background-color: $mainColor !important;
-  margin-top: 70px !important;
-  top: 0;
-}
+.mainBoxs {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
 
-
-.topnav .navbar-collapse {
-  
-  @include range-width(0, 992.98px) {
-    display: flex !important;
+  @include media-breakpoint-down(lg) {
+    width: 98%;
   }
-}
 
-.topnav .navbar-nav {
-  @include range-width(0, 992.98px) {
-    flex-direction: row;
-  }
-}
-
-.topnav .navbar-nav .nav-link {
-  color: white !important;
-}
-
-.topnav .navbar-nav .nav-item .nav-link.active {
-  color: #2dc2ff !important;
-}
-
-footer {
-  height: auto !important;
-}
-
-@media (max-width: 380px) {
-  .navbar-brand-box {
-    display: inline-block !important;
+  @include media-breakpoint-between(xl, xxl) {
+    width: 90%;
   }
 }
 
 
+.img-logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 126px;
+}
+
+.footerimg {
+  display: inline-block;
+  width: 100%;
+  max-width: 150px;
+}
+
+
+
+// bg
+.bg-main {
+  background-color: $mainColor;
+}
+
+
+
+// color
+.text-lightGray {
+  color: $lightGray;
+}
+
+
+// text
+.f14 {
+  font-size: .875rem;
+}
+
+.f15 {
+  font-size: 0.9375rem;
+}
+
+
+// link
+.f16-link {
+  color: $mainColor;
+  font-size: 0.9375rem;
+  font-weight: 300;
+}
+// .btn-info {
+//   color: white;
+//   background-color: #4ba6ef;
+//   -webkit-box-shadow: 0 2px 6px 0 rgba(75, 166, 239, 0.5);
+//           box-shadow: 0 2px 6px 0 rgba(75, 166, 239, 0.5);
+//  }
+ 
+
+
+// boo
+.modal-title {
+  font-size: 1rem !important;
+}
+.modal-header, .modal-body, .modal-footer {
+  padding: 1rem !important;
+  font-size: 0.9375rem !important;
+}
 
 
 
 
-
-
+// map
 
 
 

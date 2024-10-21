@@ -1,186 +1,114 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-Hant">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
     <title>金正禾 - Futurepnp</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- plugin css -->
-    <link href="libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
 
-    <!-- preloader css -->
-    <link rel="stylesheet" href="css/preloader.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/public.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
 
-    <!-- Bootstrap Css -->
-    <link href="css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <!-- Icons Css -->
-    <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link href="css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
   </head>
 
-  <body data-layout="horizontal">
-    <!-- Begin page -->
-    <div id="layout-wrapper">
-      <header id="page-topbar">
-        <div class="navbar-header pe-0">
-          <div class="d-flex">
-            <!-- <button type="button" class="btn btn-sm px-3 font-size-16 d-lg-none header-item waves-effect waves-light" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
-              <i class="fa fa-fw fa-bars"></i>
-            </button> -->
+  <body>
+    <!-- header -->
+    <header>
+      <div class="mainBoxs py-4">
+        <div class="row mx-auto align-items-center">
+          <div class="col-6 text-start"><img src="images/logo.png" class="img-logo"></div>
+          <div class="col-6 text-end">
+            <a class="f16-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="bi bi-person-fill me-2"></i>
+              <span>登入帳號</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- menu -->
+    <div class="container-fluid bg-main py-5">
+      <div class="mainBoxs">
+        <div class="row mx-auto">
+          <div class="col-9">
             
-            <!-- LOGO -->
-            <div class="navbar-brand-box">
-              <a href="index.html" class="logo logo-dark">
-                <span>
-                  <img src="images/logo.png" alt="" height="50">
-                </span>
-              </a>
-            </div>
-
-            
           </div>
-
-          <!-- login -->
-          <div class="d-flex">
-            <div class="dropdown d-inline-block">
-              <button class="btn header-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="h4 mb-0 bx bx-user"></i></button>
+          <div class="col-3">
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-secondary" type="button" id="button-addon2">Search</button>
             </div>
           </div>
-        </div>
-      </header>
-
-      <!-- menu -->
-      <div class="topnav">
-        <div class="container-fluid pe-0">
-          <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
-
-            <div class="collapse navbar-collapse show justify-content-between" id="topnav-menu-content">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle arrow-none" href="index.html" role="button">
-                     <i class="bx bx-copy-alt me-2"></i><span>最新消息</span>
-                  </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle arrow-none" href="#" role="button">
-                    <i class="bx bx-box me-2"></i><span>檔案分享</span>
-                  </a>
-                </li>
-              </ul>
-
-              <!-- App Search-->
-              <form class="app-search">
-                <div class="position-relative">
-                  <input type="text" class="form-control" placeholder="Search...">
-                  <button class="btn btn-info" type="button"><i class="bx bx-search-alt align-middle"></i></button>
-                </div>
-              </form>
-            </div>
-          </nav>
         </div>
       </div>
-  
-      <!-- Start right Content here -->
-      <div class="main-content">
-
-        
-      </div>
-      <!-- End Page-content -->
-
-      <!-- Login MODAL -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header py-3 px-4 border-bottom-0">
-              <h5 class="modal-title" id="modal-title">登入帳號</h5>
-
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
-            </div>
-            <div class="modal-body p-4">
-              <form class="needs-validation" name="event-form" id="form-event" novalidate>
-                <input type="hidden" name="eventid" id="eventid">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label class="form-label">登入帳號</label>
-                        <input class="form-control" placeholder="公司統一編號 / 帳號"
-                            type="text" name="title" id="event-title" required value="" />
-                        <div class="invalid-feedback">Please provide a valid event name</div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label class="form-label">登入密碼</label>
-                        <input class="form-control" type="text" name="title" id="event-title" required value="" />
-                        <div class="invalid-feedback">Please provide a valid event name</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row mt-2 align-items-center">
-                    <div class="col-sm-6">
-                      <a href=""><i class="bx bx-key me-2"></i>重設密碼</a>
-                    </div>
-                    <div class="col-sm-6 text-end">
-                      <button type="submit" class="btn btn-info">登入</button>
-                    </div>
-                    </div>
-                  </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      <!-- end Login modal-->
-      </div>
-
-      <footer class="footer">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-6 col-12 px-0">
-              <div class="text-sm-start text-center">金正禾數位有限公司</div>
-            </div>
-            <div class="col-sm-6 col-12 px-0">
-              <div class="text-sm-end text-center">
-                地址：台北市大安區敦化南路一段205號11樓之7 (1207室)
-              </div>
-              <div class="text-sm-end text-center">
-                電話：(02)2721-8262
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
-  <!-- end main content-->
 
-  </div>
-  <!-- END layout-wrapper -->
+    <!-- 中間內容 -->
+    <main>
+      <div class="mainBoxs row mx-auto">
+      </div>
+    </main>
 
+    <!-- footer -->
+    <footer class="border-top">
+      <div class="mainBoxs mt-5">
+        <div class="row mx-auto">
+          <div class="col-md-6 col-12 px-0 text-md-start text-center">
+            <p class="f15 text-lightGray">金正禾數位有限公司</p>
+          </div>
+          <div class="col-md-6 col-12 text-md-end  text-center">
+            <p class="f14 text-lightGray"><b>地址：</b>台北市大安區敦化南路一段205號11樓之7 (1207室)</p>
+            <p class="f14 text-lightGray"><b>電話：</b>(02)2721-8262</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title" id="exampleModalLabel">登入帳號</span>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3 text-start">
+                <label for=" " class="col-form-label">帳號:</label>
+                <input type="text" class="form-control" placeholder="公司統一編號/帳號">
+              </div>
+              <div class="mb-3 text-start">
+                <label for=" " class="col-form-label">密碼:</label>
+                <input type="text" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="f15 btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-key-fill me-2"></i>重設密碼</button>
+            <button type="button" class="f15 btn btn-primary">登入</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  
-  <!-- JAVASCRIPT -->
-  <script src="libs/jquery/jquery.min.js"></script>
-  <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="libs/metismenu/metisMenu.min.js"></script>
-  <script src="libs/simplebar/simplebar.min.js"></script>
-  <script src="libs/node-waves/waves.min.js"></script>
-  <script src="libs/feather-icons/feather.min.js"></script>
-  <!-- pace js -->
-  <script src="libs/pace-js/pace.min.js"></script>
-
-  <!-- calendar min js -->
-  <script src="libs/fullcalendar/index.global.min.js"></script>
-  <!-- Calendar init -->
-  <script src="js/pages/calendar.init.js"></script>
-
-  <!-- App js -->
-  <script src="js/app.js"></script>
+    <!-- 外部引入js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script> 
 
   </body>
 </html>
