@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 /*!
@@ -3034,13 +3035,27 @@ input::placeholder { font-size: 0.9375rem !important; color: #adb5bd !important;
 @media (max-width: 991.98px) { .mainBoxs { width: 98%; } }
 @media (min-width: 1200px) and (max-width: 1399.98px) { .mainBoxs { width: 90%; } }
 
+.leftbox { display: inline-block; width: 100%; height: 100vh; min-height: 100%; background-color: #edf5fc; }
+
+.img-logo2 { display: inline-block; width: 100%; max-width: 180px; }
+
 .img-logo { display: inline-block; width: 100%; max-width: 126px; }
 
 .footerimg { display: inline-block; width: 100%; max-width: 150px; }
 
+.border-top2 { border-top: 1.5px solid #85888c; }
+
 .bg-main { background-color: #15568e; }
 
+.bg-lightGray { background-color: #e9ecef; }
+
+.bg-lightBlue { background-color: #E3F2FC; }
+
 .text-lightGray { color: #74788d; }
+
+.text-blueGray { color: #4E85A8; }
+
+.text-mainColor { color: #15568e; }
 
 .f14 { font-size: .875rem; }
 
@@ -3048,6 +3063,25 @@ input::placeholder { font-size: 0.9375rem !important; color: #adb5bd !important;
 
 .f16-link { color: #15568e; font-size: 0.9375rem; font-weight: 300; }
 
+.f15-b-link { font-size: 0.9375rem; font-weight: 500; color: white; }
+.f15-b-link:hover, .f15-b-link:active, .f15-b-link.action { color: #2dc2ff; }
+
+.down_link { color: #313533; position: relative; margin-left: 20px; }
+.down_link:before { display: inline-block; content: '◎'; margin-right: 10px; position: absolute; left: -20px; top: -2px; }
+.down_link:hover, .down_link:active { color: #0d6efd; }
+
+.admin-left-link { display: inline-block; width: 100%; color: #313533; text-align: left; }
+.admin-left-link:hover, .admin-left-link:active { color: #0d6efd; }
+
+.btn-mainColor { color: white; background-color: #15568e; }
+
 .modal-title { font-size: 1rem !important; }
 
 .modal-header, .modal-body, .modal-footer { padding: 1rem !important; font-size: 0.9375rem !important; }
+
+.accordion-button.no-after:after { display: none; }
+.accordion-button:after { transform: rotate(-90deg); }
+
+.offcanvas-start { width: 220px !important; }
+
+.offcanvas { background-color: #edf5fc !important; }
