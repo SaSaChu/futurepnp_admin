@@ -164,12 +164,39 @@
             </form>
           </div>
           <div class="modal-footer justify-content-center">
-            <button type="button" class="f15 btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-key-fill me-2"></i>重設密碼</button>
+            <button type="button" class="f15 btn btn-secondary"  data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal"><i class="bi bi-key-fill me-2"></i>重設密碼</button>
             <button type="button" class="f15 btn btn-primary">登入</button>
           </div>
         </div>
       </div>
     </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">重設密碼</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3 text-start">
+                <label for=" " class="col-form-label">新密碼:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3 text-start">
+                <label for=" " class="col-form-label">確認密碼:</label>
+                <input type="text" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
 
     <!-- 外部引入js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
